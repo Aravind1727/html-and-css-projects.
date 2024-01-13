@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00ffff, #003399);
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  background: #ffffff;
+  animation: slide-in 1s forwards;
+}
+
+.text {
+  margin-left: 50px;
+  opacity: 0;
+  animation: fade-in 1s 0.5s forwards;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
